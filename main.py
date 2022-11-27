@@ -1,0 +1,61 @@
+import Operaciones as O
+import Esunnumero as sn
+def main():
+    tipo=input('Que operación deseas realizar Sumar(S) Restar(R) Multiplicar(M) Dividir(D):')
+    if tipo=='S' or tipo=='s':
+        print('los valores a sumar son:')
+        a=input('valor 1: ')
+        a=sn.esnumero(a)
+        b=input('valor 2: ')
+        b=sn.esnumero(b)
+        c=input('valor 3: ')
+        c=sn.esnumero(c)
+        d=input('valor 4: ')
+        d=sn.esnumero(d)
+        e=input('valor 5: ')
+        e=sn.esnumero(e)
+        f=input('valor 6: ')
+        f=sn.esnumero(f)
+        print(O.Op.suma(a,b,c,d,e,f))
+    elif tipo=='R'or tipo=='r':
+        print('los valores a restar son:')
+        a=input('valor 1: ')
+        a=sn.esnumero(a)
+        b=input('valor 2: ')
+        b=sn.esnumero(b)
+        c=input('valor 3: ')
+        c=sn.esnumero(c)
+        d=input('valor 4: ')
+        d=sn.esnumero(d)
+        e=input('valor 5: ')
+        e=sn.esnumero(e)
+        f=input('valor 6: ')
+        f=sn.esnumero(f)
+        print(O.Op.resta(a,b,c,d,e,f))
+    elif tipo=='M' or tipo=='m':
+        print('los valores a multiplicar son:')
+        a=input('valor 1: ')
+        a=sn.esnumero(a)
+        b=input('valor 2: ')
+        b=sn.esnumero(b)
+        c=input('valor 3: ')
+        c=sn.esnumero(c)
+        d=input('valor 4: ')
+        d=sn.esnumero(d)
+        e=input('valor 5: ')
+        e=sn.esnumero(e)
+        f=input('valor 6: ')
+        f=sn.esnumero(f)
+        print(O.Op.multiplica(a,b,c,d,e,f))
+    elif tipo=='D' or tipo=='d':
+        print('los dos valores a dividir son:')
+        a=input('valor 1: ')
+        a=sn.esnumero(a)
+        b=input('valor 2: ')
+        b=sn.esnumero(b)
+        print(O.Op.divide(a,b))
+
+
+
+if __name__ == '__main__':
+    main()
